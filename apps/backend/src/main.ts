@@ -8,7 +8,10 @@ async function bootstrap() {
   app.use(cookieParser());
 
   app.enableCors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",                       // local frontend
+      "https://frontend-production-980a.up.railway.app", // deployed frontend
+    ],
     credentials: true,
   });
 
