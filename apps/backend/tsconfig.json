@@ -8,6 +8,18 @@
     "rootDir": "./src",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "useDefineForClassFields": false
-  }
+    "useDefineForClassFields": false,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@dashboard/shared-types": ["../../packages/shared-types/src"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    {
+      "path": "../../packages/shared-types"
+    }
+  ]
 }
