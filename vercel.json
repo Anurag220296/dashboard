@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "src": "apps/frontend",
+      "use": "@vercel/next",
+      "config": {
+        "outputDirectory": ".next"
+      }
+    },
+    {
+      "src": "apps/backend/api/**/*.ts",
+      "use": "@vercel/node"
+    }
+  ]
+}
